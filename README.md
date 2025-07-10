@@ -38,15 +38,20 @@ npm install
 
 ### 3. Start the Server
 If you want to run it once:
+```bash
 node index.js
+```
 
 For automatic reloads during development:
+``` bash
 npx nodemon index.js
-
+```
 Make sure nodemon is installed globally if you want to use it outside npx:
+``` bash
 npm install -g nodemon
-
+```
 ## Project Structure 
+```text
 .
 ├── index.js                     # Main server file
 ├── package.json
@@ -66,7 +71,7 @@ npm install -g nodemon
 │       ├── header.ejs
 │       └── footer.ejs
 └── README.md
-
+```
 ## Acknowledgements
 API provided by TheMealDB
 Bootstrap for UI components
