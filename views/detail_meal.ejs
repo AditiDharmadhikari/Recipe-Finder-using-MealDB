@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= meal.strMeal %> - Full Recipe</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css"/>
+</head>
+<body d-flex flex-column min-vh-100>
+  <%- include("partials/header.ejs") %> 
+  <main class="flex-grow-1">
+  <div class="container mt-4">
+    <h2><%= meal.strMeal %> (ID: <%= meal.idMeal %>)</h2>
+    <img src="<%= meal.strMealThumb %>" class="meal-image" alt="<%= meal.strMeal %>">
+
+    
+    <h4>Instructions</h4>
+    <p><%= meal.strInstructions %></p>
+
+    <a href="/" class="btn btn-grey">Back to Home</a>  
+  </div>
+  </main> 
+ <%- include("partials/footer.ejs") %> 
+</body>
+</html>
